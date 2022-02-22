@@ -1,0 +1,57 @@
+﻿body {
+    background: #1d1d1d;
+}
+
+.container {
+    margin-top: 10%;
+    margin-left: 40%;
+    height: 343px;
+}
+
+.container .textBox1 {
+    height: 25px;
+    width: 287px;
+    border-style: none;
+    text-align: right;
+    font-size: small;
+    margin-left: 1px;
+    border-top: 1px solid #458500;
+    background: #2E2E2E;
+}
+
+.container .textBox2 {
+    height: 60px;
+    width: 287px;
+    border-style: none;
+    text-align: right;
+    margin-left: 1px;
+    background: #2E2E2E;
+    font-size: xx-large;
+}
+
+.container .btn {
+    height: 44px;
+    width: 70px;
+    font-size: large;
+    background: #3F3F3F;
+    border-color: #3F3F3F;
+}
+
+.container .btn_equal {
+    font-weight: bold;
+    background: #458500;
+    border-color: #458500;
+}
+
+.container .btn_top {
+    margin-bottom: 4px; 
+    margin-top: 6px;
+}
+
+.container .btn_between {
+    margin-bottom: 4px;
+}
+
+.container .btn_zero {
+    width: 144px;
+}
