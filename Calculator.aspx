@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Calculator.aspx.cs" Inherits="lab1_2.Calculator" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Calculator.aspx.cs" Inherits="WebCalculator.Calculator" %>
 
 <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace lab1_2
+namespace WebCalculator
 {
     public partial class Calculator : System.Web.UI.Page
     {
@@ -151,11 +151,15 @@ namespace lab1_2
 
         protected void Button17_Click(object sender, EventArgs e)
         {
-            if (TextBox2.Text == "0" || flag)
+            if (flag)
             {
                 flag = false;
-                return;
+                TextBox2.Text = "0";
             }
+            else if (TextBox2.Text == "0")
+                flag = false;
+            else if (TextBox2.Text == "error")
+                TextBox2.Text = "0";
             else
                 TextBox2.Text = TextBox2.Text + "0";
         }
@@ -217,9 +221,16 @@ namespace lab1_2
                     TextBox2.Text = result.ToString();
                     break;
                 case 4:
-                    result /= double.Parse(TextBox2.Text);
-                    TextBox1.Text += TextBox2.Text;
-                    TextBox2.Text = result.ToString();
+                    if (TextBox2.Text == "0")
+                    {
+                        TextBox2.Text = "error";
+                    }
+                    else
+                    {
+                        result /= double.Parse(TextBox2.Text);
+                        TextBox1.Text += TextBox2.Text;
+                        TextBox2.Text = result.ToString();
+                    }
                     break;
 
                 default:
